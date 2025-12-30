@@ -1,0 +1,9 @@
+network:
+  method: generate_radial_network
+  settings:
+    central_ligand: FXR_12
+partial_charge:
+  #method: am1bcc
+  method: nagl
+  #settings:
+    #off_toolkit_backend: ambertools
