@@ -32,7 +32,7 @@ for file in network_setup/transformations/*.json; do
 
   job_name="RBFE_${target_num}${suffix}"
   jobpath="network_setup/transformations/${dirpath}.job"
-  cmd="openfe quickrun \"$file\" -o results/ -d results/1/$dirpath"
+  cmd="openfe quickrun \"$file\" -o results/ -d results/"
 
   # 生成 Slurm 脚本
   {
