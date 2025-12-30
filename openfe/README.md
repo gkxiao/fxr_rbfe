@@ -86,4 +86,5 @@ The generated DDG report (unit: kcal/mol) is as follows, including the ligand pa
 
 
 ## Post-simulation processing
-- fxr_agonist_openfe_rbfe.ipynb
+
+Upon the completion of all simulation jobs, carry out post-simulation data processing and analysis using the Jupyter Notebook: fxr_agonist_openfe_rbfe.ipynb.
