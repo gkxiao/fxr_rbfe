@@ -1,4 +1,6 @@
 ## Create network
+A star network was constructed with compound FXR_12 serving as the central node. Partial charges were calculated using the Neural Atomistic Graph Learning (NAGL) method, and each edge in the constructed star network was repeated twice to ensure the reliability of subsequent topological analysis.
+
 ```
 openfe plan-rbfe-network -M fxr_ligand.sdf\
  -p fxr_prot.pdb\
