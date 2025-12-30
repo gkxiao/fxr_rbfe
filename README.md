@@ -9,3 +9,14 @@ This study uses 14 FXR agonists from the D3R CG2 Free Energy Set 2 dataset—who
 ## 📚 Read the Full Case Study
 [Read the original article (Chinese)](http://blog.molcalx.com.cn/2020/07/27/fep-fxr-agonist.html)
 
+## 📚 Perform similar RBFE calculations using OpenFE
+
+- network_setup.zip: Compressed package with network-related materials
+- openfe_results/: Directory containing JSON files of RBFE simulation results
+- fxr_openfe_rbfe_results.tsv: OpenFE calculation report file (TSV format)
+- setting.yaml: Configuration file for RBFE simulations
+- fxr_agonist_openfe_rbfe.ipynb: Jupyter Notebook for simulation post-processing
+- fxr_agonist_openfe_rbfe.html: Visualized post-processing results (exported from the Jupyter Notebook)
+
+
+
