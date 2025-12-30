@@ -10,7 +10,7 @@ openfe plan-rbfe-network -M fxr_ligand.sdf\
 
 ## Perform Simulation
 
-Automatically schedule each edge's calculation task (JSON) with SLURM and output results to the results directory. Let's have a shell script as following;
+Automatically schedule each edge's calculation task (JSON) with SLURM and output results to the results directory. Let's have a shell script as follows;
 
 ```run_simulation.sh
 #!/bin/bash
