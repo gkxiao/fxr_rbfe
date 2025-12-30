@@ -9,7 +9,10 @@ openfe plan-rbfe-network -M fxr_ligand.sdf\
 ```
 
 ## Perform Simulation
-```run simulation.sh
+
+Automatically schedule each edge's calculation task (JSON) with SLURM and output results to the results directory. Let's have a shell script as following;
+
+```run_simulation.sh
 #!/bin/bash
 
 for file in network_setup/transformations/*.json; do
@@ -49,6 +52,11 @@ for file in network_setup/transformations/*.json; do
   sbatch "$jobpath"
 done
 ```
+Submit job with the command:
+```
+sh run_simulation.sh
+```
+Simply wait for all calculations to finish. For each complex (run in duplicate), the required computation time is about 7 hours on an RTX 4090 GPU.
 
 ## Collect results and generate reports
 After completing the simulation steps, you can gather all calculation results and automatically generate a DDG report with one command. Execute the following command in the terminal, where ./openfe_results refers to the directory storing your OpenFE calculation results, and the --report ddg parameter specifies to generate a DDG (relative binding free energy) report:
